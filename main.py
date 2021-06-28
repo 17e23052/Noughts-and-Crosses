@@ -11,6 +11,15 @@ def instructions(board):
   sleep(2)
   print("To place your O or X on the board!")
   sleep(2)
+  print("""These are the positions on the grid:
+   1 │ 2 │ 3
+  ───┼───┼───
+   4 │ 5 │ 6
+  ───┼───┼───
+   7 │ 8 │ 9
+   
+   """)
+  sleep(2)
 instructions(board)
 def displayboard(board):
     print(" ", board[0][0], "│", board[0][1], "│", board[0][2])
