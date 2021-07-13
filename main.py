@@ -1,4 +1,5 @@
 from time import sleep
+player = "X"
 board = [[" ", " ", " "],
          [" ", " ", " "],
          [" ", " ", " "]]
@@ -19,7 +20,6 @@ def displayboard(board):
     print(" ", "4", "│", "5", "│", "6")
     print(" ───┼───┼───")
     print(" ", "7", "│", "8", "│", "9")
-player = "X"
 def move(board, player):
   print("Where do you want to place your cross?")
   position = input()
