@@ -56,6 +56,7 @@ def move(board, player1, player2):
   print(" ", board[1][0], "│", board[1][1], "│", board[1][2])
   print(" ───┼───┼───")
   print(" ", board[2][0], "│", board[2][1], "│", board[2][2])
+  print("")
 def check_win(board, player):
     won = False
     if board[0][0] == player and board[0][1] == player and board[0][2] == player:
@@ -82,10 +83,12 @@ while turncount < 9:
   move(board, player1, player2)
   turncount = turncount + 1
   if check_win(board, "X") == True:
-    turncount == 9
     print("Player 1 wins!")
+    break
   elif check_win(board, "O") == True:
-    turncount == 9
     print("Player 2 wins!")
+    break
+  elif turncount == 9 and check_win != True:
+    print("It's a draw.")
   player = swapplayer(player)
 check_win(board, player)
