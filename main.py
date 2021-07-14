@@ -8,11 +8,11 @@ board = [[" ", " ", " "],
 def instructions(board):
   print("Welcome to Noughts and Crosses!")
   sleep(2)
-  print("Player 1 will be crosses, and player 2 will be noughts.")
+  print("Player 1 will be crosses. Player 2 will be noughts.")
   sleep(2)
   print("Enter the number 1 to 9 to choose a location on the grid")
   sleep(2)
-  print("To place your O or X on the board!")
+  print("to place your nought or cross!")
   sleep(2)
   print("These are the positions on the grid:")
   sleep(2)
