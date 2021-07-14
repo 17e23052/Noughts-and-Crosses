@@ -51,6 +51,7 @@ def move(board, player1, player2):
     board[2][2] = player
   else:
     print("Invalid input")
+    #This still increases the turncount. I don't know how to change this.
   print(" ", board[0][0], "│", board[0][1], "│", board[0][2])
   print(" ───┼───┼───")
   print(" ", board[1][0], "│", board[1][1], "│", board[1][2])
@@ -63,7 +64,7 @@ def check_win(board, player):
         won = True
     elif board[1][0] == player and board[1][1] == player and board[1][2] == player:
         won = True
-    elif board[2][0] == player and board[2][1] == player and board[2][2] == player1:
+    elif board[2][0] == player and board[2][1] == player and board[2][2] == player:
         won = True
     elif board[0][0] == player and board[1][1] == player and board[2][2] == player:
         won = True
